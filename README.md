@@ -1,4 +1,80 @@
+Fedora 31 noted
+
+```
+/etc/default/grub -> here
+grub.conf
+ intel_iommu=on iommu=pt cgroup_enable=memory,namespace systemd.unified_cgroup_hierarchy=0 pcie_acs_override=downstream"
+
+
+```
+EFI/CLOVER/config.plist
+
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/YOUR-CLOVER-config-plist-EFI.png" width="800"></p>
+virt-manager settings
+<br>
+(q35-2.11)
+<br>
+penryn cpu type required
+<br>
+manual cirrus typed in video card model 
+<br>
+change from spice to vnc
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/VIRT_MANAGER-settings.png" width="800"></p>
+
+boot options enabled "esc at load" OVMF platform settings? resoloution internal
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/OVMF-CONFIG-RESO.png" width="800"></p>
+
+ignore_msrs and unsafe_interrupts required to bypass serial console loading for verbose boot testing
+
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/KVM-modprobe.png" width="800"></p>
+
+
 ### Note
+
+to add q35-speed-patch for libvirt, (4200 and 4920)
+
+
+# Speedpatch for q35 libvirt to remove slow performance with KVM
+
+svn co -r 4920 svn://svn.code.sf.net/p/cloverefiboot/code Clover
+
+
+http://s3.nicksherlock.com/forumposts/2016/clover-r4061-qemu-cpu-speed-patch.diff
+
+Download this patch to “edk2/Clover”. Change into that directory and run:
+
+svn patch clover-r4061-qemu-cpu-speed-patch.diff
+
+
+Change into the “edk2/Clover” directory, and run:
+
+./ebuild.sh
+
+The default options, which use XCode to build an X64 bootloader, are perfect for us.
+
+After that completes, run “cd CloverPackage; ./makepkg”. This will produce an installable package for us in “edk2/Clover/CloverPackage/sym/Clover_v2.4k_r4920.pkg.”.
+
+
+# ** FORKED THIS OUT OF IT DRIVING ME TO BRINK of,.q35?
+
+<br>
+todo: move q35-dsdt.aml ->
+<br>
+
+q35-acpi-dsdt.aml /Volumes/ESP/EFI/CLOVER/ACPI/origin/
+<br>
+
+
+(these qcow2's are built for KVM? q35 model in libvirt)
+<br>
+
+(q35-acpi-dsdt.aml appears missing?)
+<br>
+
+@q35-acpi-dsdt.aml EFI/CLOVER/ACPI/origin/
+<br>
+
+(in the clover image)
 
 This `README` documents the new method to install macOS. The older `README` is
 available [here](README-OLD.md).
@@ -48,13 +124,13 @@ Phenom II X3 720 does not. Ryzen processors work just fine.
 * Install QEMU and other packages.
 
   ```
-  sudo apt-get install qemu uml-utilities virt-manager dmg2img git wget libguestfs-tools
+  sudo apt-get install qemu uml-utilities virt-manager dmg2img git wget
   ```
 
   This step may need to be adapted for your Linux distribution.
 
-* Clone this repository on your QEMU system. Files from this repository are
-  used in the following steps.
+* Clone this repository again on your QEMU system. Files from this repository
+  are used in the following steps.
 
   ```
   cd ~
@@ -73,20 +149,6 @@ Phenom II X3 720 does not. Ryzen processors work just fine.
   You can choose your desired macOS version here. After executing this step,
   you should have the `BaseSystem.dmg` file in the current folder.
 
-  Sample run:
-
-  ```
-  $ ./fetch-macOS.py
-  #    ProductID    Version    Build   Post Date  Title
-  1    041-47723    10.14.4  18E2034  2019-03-25  macOS Mojave
-  2    091-95155    10.13.6    17G66  2019-01-08  macOS High Sierra
-  3    041-64745    10.14.5   18F203  2019-05-22  macOS Mojave
-  4    041-59913    10.14.5   18F132  2019-05-13  macOS Mojave
-  5    041-71284      10.15  19A471t  2019-06-03  macOS 10.15 Beta
-
-  Choose a product to download (1-5): 5
-  ```
-
   Attention: Modern NVIDIA GPUs are supported on HighSierra but not on Mojave
   (yet).
 
@@ -94,13 +156,6 @@ Phenom II X3 720 does not. Ryzen processors work just fine.
 
   ```
   dmg2img BaseSystem.dmg BaseSystem.img
-  ```
-
-  Note: You can also use the following command to do this conversion, if your
-  QEMU version is >= 4.0.0.
-
-  ```
-  qemu-img convert BaseSystem.dmg -O raw BaseSystem.img
   ```
 
 * Create a virtual HDD image where macOS will be installed.  If you change the
@@ -115,18 +170,10 @@ Phenom II X3 720 does not. Ryzen processors work just fine.
 
   ```
   sudo ip tuntap add dev tap0 mode tap
+
   sudo ip link set tap0 up promisc on
-  sudo ip link set dev virbr0 up
-  sudo ip link set dev tap0 master virbr0
-  ```
 
-  Note: If `virbr0` network interface is not present on your system, it may
-  have been deactivated. Try enabling it by using the following commands,
-
-  ```
-  virsh net-start default
-
-  virsh net-autostart default
+  sudo brctl addif virbr0 tap0
   ```
 
 * Now you are ready to install macOS 🚀
@@ -144,7 +191,6 @@ Phenom II X3 720 does not. Ryzen processors work just fine.
   If you are new to installing macOS, see the [older README](README-OLD.md) for
   help.
 
-  For macOS Catalina, use `boot-macOS-Catalina.sh` script.
 
 - GUI method (alternate - functional but needs further debugging work).
 
@@ -169,8 +215,7 @@ Phenom II X3 720 does not. Ryzen processors work just fine.
     `virt-manager` is able to start the `macOS` VM.
 
     Note: You may need to remove the following block from `macOS-libvirt-NG.xml`
-    and run `virsh --connect ...` again. Alternate easier fix: Remove `SATA
-    Disk 3` from the macOS virtual machine in `virt-manager`.
+    and run `virsh --connect ...` again.
 
     ```
     <disk type='file' device='disk'>
@@ -194,8 +239,7 @@ Phenom II X3 720 does not. Ryzen processors work just fine.
 
   sudo ip tuntap add dev tap0 mode tap
   sudo ip link set tap0 up promisc on
-  sudo ip link set dev virbr0 up
-  sudo ip link set dev tap0 master virbr0
+  sudo brctl addif virbr0 tap0
   ```
 
   This has been enough for me so far.
@@ -204,8 +248,7 @@ Phenom II X3 720 does not. Ryzen processors work just fine.
 
 * To passthrough GPUs and other devices, see [these notes](UEFI/README.md).
 
-* Need a different resolution? Check out the [notes](notes.md) included in this
-  repository.
+* Need a different resolution? Check various notes included in this repository.
 
 
 ### Is This Legal?
