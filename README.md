@@ -32,9 +32,9 @@ ignore_msrs and unsafe_interrupts required to bypass serial console loading for 
 
 # * Clover bootloader settings
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/clover-settings.png" width="800"></p>
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/patch-apic.png" width="800"></p>
 
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/patch-apic.png.apic-ext.png" width="800"></p>
-<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/patch-apic.png" width="800"></p>
 
 
 ### Note
