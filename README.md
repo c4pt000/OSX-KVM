@@ -1,7 +1,6 @@
 # * respawned fork from kholia to reflect updates for Catalina
 <br>
-<p align="center"><img src="https://raw.githubusercontent.com/c4pt000/OSX-KVM/master/fetch-download-catalina-1024x345.png
-" width="400"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/c4pt000/OSX-KVM/master/fetch-download-catalina-1024x345.png" width="400"></p>
 
 qemu-img convert BaseSystem.dmg -O raw Catalina-installer.iso
 
