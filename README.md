@@ -19,6 +19,8 @@ qemu-img convert BaseSystem.dmg -O raw Catalina-installer.iso
 https://drive.google.com/file/d/1v-fIW2trwosJ9G09I18R_OeYY_PH_E2k/view?usp=sharing
 
 
+(iso modified from nick sherlock's iso again from kholia's patch -> resoloution fixed with this iso ^ for kholia's OVMF patch from https://www.nicksherlock.com/2019/10/installing-macos-catalina-10-15-on-proxmox-6/ )
+
 * where nbd5 is choosen mount point (where qemu-nbd is installed, where kernel is built with NBD as a block device)
 <br>
 to mount to edit
