@@ -26,6 +26,8 @@ grub.conf
 # * clover-r5070.iso.catalina.iso (partial q35 acceleration mount as SATA qcow2 not as a CDROM iso "in .iso container")
 https://drive.google.com/file/d/1v-fIW2trwosJ9G09I18R_OeYY_PH_E2k/view?usp=sharing
 
+
+* where nbd5 is choosen mount point (where qemu-nbd is installed, where kernel is built with NBD as a block device)
 <br>
 to mount to edit
 <br>
@@ -37,6 +39,7 @@ mkdir /mnt/catalina-5070
 <br>
 mount /dev/nbd5p1 /mnt/catalina-5070
 <br>
+cd /mnt/cataline-5070
 <br>
 EFI/CLOVER/kexts/Other <-- for custom kexts
 <br>
