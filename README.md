@@ -21,6 +21,20 @@ grub.conf
 # * clover-r5070.iso.catalina.iso (partial q35 acceleration)
 https://drive.google.com/file/d/1v-fIW2trwosJ9G09I18R_OeYY_PH_E2k/view?usp=sharing
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 EFI/CLOVER/config.plist
 
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/YOUR-CLOVER-config-plist-EFI.png" width="800"></p>
