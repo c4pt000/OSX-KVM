@@ -15,7 +15,7 @@ qemu-img convert BaseSystem.dmg -O raw Catalina-installer.iso
 <br>
 <br>
 
-# * clover-r5070.iso.catalina.iso (partial q35 acceleration mount as SATA qcow2 not as a CDROM iso "in .iso container")
+# * clover-r5070.iso.catalina.iso (partial q35 acceleration mount as SATA qcow2 not as a CDROM iso "files encapsulated in .iso based container")
 https://drive.google.com/file/d/1v-fIW2trwosJ9G09I18R_OeYY_PH_E2k/view?usp=sharing
 
 
