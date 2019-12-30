@@ -1,5 +1,8 @@
 # * respawned fork from kholia to reflect updates for Catalina
 <br>
+qemu-img convert BaseSystem.dmg -O raw Catalina-installer.iso
+
+<br>
 Fedora 31 noted
 
 ```
