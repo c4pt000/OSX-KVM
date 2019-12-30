@@ -34,7 +34,7 @@ mkdir /mnt/catalina-5070
 <br>
 mount /dev/nbd5p1 /mnt/catalina-5070
 <br>
-cd /mnt/cataline-5070
+cd /mnt/catalina-5070
 <br>
 EFI/CLOVER/kexts/Other <-- for custom kexts
 <br>
