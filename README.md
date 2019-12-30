@@ -27,8 +27,18 @@ grub.conf
 https://drive.google.com/file/d/1v-fIW2trwosJ9G09I18R_OeYY_PH_E2k/view?usp=sharing
 
 <br>
+to mount to edit
+<br>
+modprobe nbd max_part=8
+<br>
+qemu-nbd --connect=/dev/nbd5 clover-r5070.iso.catalina.iso
+<br>
+mkdir /mnt/catalina-5070
+<br>
+mount /dev/nbd5p1 /mnt/catalina-5070
 <br>
 <br>
+EFI/CLOVER/kexts/Other <-- for custom kexts
 <br>
 <br>
 <br>
