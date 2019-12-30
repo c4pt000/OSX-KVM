@@ -9,15 +9,7 @@
 qemu-img convert BaseSystem.dmg -O raw Catalina-installer.iso
 ```
 <br>
-Fedora 31 noted
 
-```
-/etc/default/grub -> here
-grub.conf
- intel_iommu=on iommu=pt cgroup_enable=memory,namespace systemd.unified_cgroup_hierarchy=0 pcie_acs_override=downstream"
-
-
-```
 <br>
 <br>
 <br>
@@ -46,6 +38,16 @@ EFI/CLOVER/kexts/Other <-- for custom kexts
 <br>
 <br>
 <br>
+
+Fedora 31 noted
+
+```
+/etc/default/grub -> here
+grub.conf
+ intel_iommu=on iommu=pt cgroup_enable=memory,namespace systemd.unified_cgroup_hierarchy=0 pcie_acs_override=downstream"
+
+
+```
 <br>
 <br>
 <br>
