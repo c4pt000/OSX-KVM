@@ -65,8 +65,10 @@ qemu-img convert BaseSystem.dmg -O raw Catalina-installer.iso
 ### * clover-r5070.iso.imac131.svga.iso (partial q35 acceleration mount as SATA qcow2 not as a CDROM iso "files encapsulated in .iso based container")
 
 
-
 https://drive.google.com/file/d/1VeiY7Dt_uk_8KwVNQ-b2riPaUZcih9Tu/view
+
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/Screenshot%20at%202019-12-30%2021-35-35.png" width="800"></p>
+
 
 
 (iso modified from nick sherlock's iso again from kholia's patch -> resoloution fixed with this iso ^ for kholia's OVMF patch from https://www.nicksherlock.com/2019/10/installing-macos-catalina-10-15-on-proxmox-6/ )
