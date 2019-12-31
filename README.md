@@ -15,7 +15,7 @@ qemu-img convert BaseSystem.dmg -O raw Catalina-installer.iso
 <br>
 <br>
 
-# * clover-r5070.iso.catalina.svga.iso (partial q35 acceleration mount as SATA qcow2 not as a CDROM iso "files encapsulated in .iso based container")
+### * clover-r5070.iso.catalina.svga.iso (partial q35 acceleration mount as SATA qcow2 not as a CDROM iso "files encapsulated in .iso based container")
 
 
 
@@ -24,7 +24,7 @@ https://drive.google.com/file/d/1vcA6ti6SyEBYZ48DRXSFvpsJPZkQ2d5-/view
 
 (iso modified from nick sherlock's iso again from kholia's patch -> resoloution fixed with this iso ^ for kholia's OVMF patch from https://www.nicksherlock.com/2019/10/installing-macos-catalina-10-15-on-proxmox-6/ )
 
-# * to mount to edit
+### * to mount to edit
 <br>
 * where nbd5 is choosen mount point (where qemu-nbd is installed, where kernel is built with NBD as a block device)
 <br>
