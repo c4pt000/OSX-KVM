@@ -35,7 +35,16 @@ ignore_msrs and unsafe_interrupts required to bypass serial console loading for 
   ```
   $ sudo cp kvm.conf /etc/modprobe.d/kvm.conf
   ```
+* editing virsh machine settings with nano opposed to vi standard
 
+
+```
+echo "export EDITOR=nano" >> /root/.bashrc
+
+#where user is your username
+echo "export EDITOR=nano" >> /home/user/.bashrc
+
+```
 * Install QEMU and other packages.
 
   ```
