@@ -126,7 +126,7 @@ virt-manager settings
 
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/Screenshot%20at%202019-12-30%2021-34-27.png" width="800"></p>
 
-boot options enabled "esc at load" OVMF platform settings? resoloution internal
+### boot options enabled "esc at load" OVMF platform settings? resoloution internal
 
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/OVMF-CONFIG-RESO.png" width="800"></p>
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/networking-mojave.png" width="800"></p>
