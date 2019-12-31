@@ -39,6 +39,7 @@ ignore_msrs and unsafe_interrupts required to bypass serial console loading for 
 
 
 ```
+sudo -i
 echo "export EDITOR=nano" >> /root/.bashrc
 
 #where user is your username
