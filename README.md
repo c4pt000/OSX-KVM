@@ -59,7 +59,7 @@ grub.conf
 <br>
 <br>
 <br>
-
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/1920-1080-system-pref-display.png" width="800"></p>
 
 EFI/CLOVER/config.plist
 
