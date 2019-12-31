@@ -56,6 +56,8 @@ grub.conf
 ```
 <br>
 <br>
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/1920x1080.png" width="800"></p>
+
 <br>
 <br>
 <br>
