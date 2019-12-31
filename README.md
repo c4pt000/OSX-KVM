@@ -330,8 +330,8 @@ Gabriel Somlo also has [some thoughts](http://www.contrib.andrew.cmu.edu/~somlo/
 
 
 -c4pt000
-# * "According to kholia not me, I am also a poor student not in canada though much worse"
-# "I guess according to kholia's motivation"
+### * "According to kholia not me, I am also a poor student not in canada though much worse"
+### "I guess according to kholia's motivation"
 ### Motivation
 
 My aim is to enable macOS based builds + testing, kernel debugging, reversing
