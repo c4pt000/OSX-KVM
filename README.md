@@ -77,18 +77,14 @@ https://drive.google.com/file/d/1VeiY7Dt_uk_8KwVNQ-b2riPaUZcih9Tu/view
 <br>
 * where nbd5 is choosen mount point (where qemu-nbd is installed, where kernel is built with NBD as a block device)
 <br>
-
+```
 modprobe nbd max_part=8
-<br>
 qemu-nbd --connect=/dev/nbd5 clover-r5070.iso.catalina.iso
-<br>
 mkdir /mnt/catalina-5070
-<br>
 mount /dev/nbd5p1 /mnt/catalina-5070
-<br>
 cd /mnt/catalina-5070
-<br>
-EFI/CLOVER/kexts/Other <-- for custom kexts
+ls EFI/CLOVER/kexts/Other                     # <-- for custom kexts
+```
 <br>
 <br>
 <br>
