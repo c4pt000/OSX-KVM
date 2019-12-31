@@ -1,3 +1,5 @@
+### clover-r5070.iso.imac131.svga.iso (intel q35 accel + VMsvga + imac13,1 store login)
+
 https://drive.google.com/file/d/1VeiY7Dt_uk_8KwVNQ-b2riPaUZcih9Tu/view
 
 ### Requirements
