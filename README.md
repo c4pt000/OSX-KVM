@@ -73,9 +73,10 @@ penryn cpu type required
 manual cirrus typed in video card model 
 <br>
 change from spice to vnc
-<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/VIRT_MANAGER-settings.png" width="800"></p>
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/Screenshot%20at%202019-12-30%2021-34-27.png" width="800"></p>
 
 boot options enabled "esc at load" OVMF platform settings? resoloution internal
+
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/OVMF-CONFIG-RESO.png" width="800"></p>
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/Screenshot%20at%202019-12-30%2021-34-57.png" width="800"></p>
 ignore_msrs and unsafe_interrupts required to bypass serial console loading for verbose boot testing
