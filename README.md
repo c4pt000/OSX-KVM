@@ -82,13 +82,14 @@ penryn cpu type required
 boot options enabled "esc at load" OVMF platform settings? resoloution internal
 
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/OVMF-CONFIG-RESO.png" width="800"></p>
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/networking-mojave.png" width="800"></p>
+
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/Screenshot%20at%202019-12-30%2021-34-57.png" width="800"></p>
 ignore_msrs and unsafe_interrupts required to bypass serial console loading for verbose boot testing
 
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/KVM-modprobe.png" width="800"></p>
 
 
-<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/networking-mojave.png" width="800"></p>
 
 
 
