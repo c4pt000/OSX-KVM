@@ -1,6 +1,6 @@
-# * respawned fork from kholia to reflect updates for Catalina
+### * respawned fork from kholia to reflect updates for Catalina
 
-# * WIP implement bash script to deploy virsh based virt-manager install package management driven install qemu
+### * WIP implement bash script to deploy virsh based virt-manager install package management driven install qemu
 <br>
 <br>
 <p align="center"><img src="https://raw.githubusercontent.com/c4pt000/OSX-KVM/master/fetch-download-catalina-1024x345.png" width="600"></p>
