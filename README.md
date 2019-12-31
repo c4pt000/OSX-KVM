@@ -120,6 +120,8 @@ virt-manager settings
 (q35-2.11)
 <br>
 penryn cpu type required
+
+# VGA required type not vmware, not cirrus, not virtio, not QXL
 <br>
 
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/Screenshot%20at%202019-12-30%2021-34-27.png" width="800"></p>
