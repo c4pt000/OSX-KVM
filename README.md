@@ -103,7 +103,7 @@ grub.conf
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/scrambled.png" width="800"></p>
 <br>
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/scrambled-auto-correct.png" width="800"></p>
-
+## default for display might help when graphics extert visual artifacts, and changing from full screen to windowed otherwise expect graphical instability, without physical graphics card, (other solutions are teamviewer installed in the guest and teamviewer installed in the host, then connecting from teamviewer host side to teamviewer guest side using LAN only)
 <br>
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/1920x1080.png" width="800"></p>
 
