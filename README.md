@@ -74,9 +74,9 @@ https://drive.google.com/file/d/1VeiY7Dt_uk_8KwVNQ-b2riPaUZcih9Tu/view
 (iso modified from nick sherlock's iso again from kholia's patch -> resoloution fixed with this iso ^ for kholia's OVMF patch from https://www.nicksherlock.com/2019/10/installing-macos-catalina-10-15-on-proxmox-6/ )
 
 ### * to mount to edit
-<br>
-* where nbd5 is choosen mount point (where qemu-nbd is installed, where kernel is built with NBD as a block device)
-<br>
+### * where nbd5 is choosen mount point (where qemu-nbd is installed, where kernel is built with NBD as a block device)
+
+
 ```
 modprobe nbd max_part=8
 qemu-nbd --connect=/dev/nbd5 clover-r5070.iso.catalina.iso
