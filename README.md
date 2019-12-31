@@ -329,6 +329,9 @@ The "secret" Apple OSK string is widely available on the Internet. It is also in
 Gabriel Somlo also has [some thoughts](http://www.contrib.andrew.cmu.edu/~somlo/OSXKVM/#sec_4) on the legal aspects involved in running macOS under QEMU/KVM.
 
 
+-c4pt000
+# * "According to kholia not me, I am also a poor student not in canada though much worse"
+# "I guess according to kholia's motivation"
 ### Motivation
 
 My aim is to enable macOS based builds + testing, kernel debugging, reversing
