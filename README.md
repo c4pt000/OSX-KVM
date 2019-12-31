@@ -89,11 +89,7 @@ ignore_msrs and unsafe_interrupts required to bypass serial console loading for 
 
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/KVM-modprobe.png" width="800"></p>
 
-# * Clover bootloader settings
-<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/clover-settings.png" width="800"></p>
-<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/patch-apic.png" width="800"></p>
 
-<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/patch-apic.png.apic-ext.png" width="800"></p>
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/networking-qemu-virt-manager.png" width="800"></p>
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/networking-mojave.png" width="800"></p>
 
@@ -144,7 +140,12 @@ q35-acpi-dsdt.aml /Volumes/ESP/EFI/CLOVER/ACPI/origin/
 @q35-acpi-dsdt.aml EFI/CLOVER/ACPI/origin/
 <br>
 
-(in the clover image)
+(in the clover image)'
+# * Clover bootloader settings based off Mojave Olarila raw intel image distro install
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/clover-settings.png" width="800"></p>
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/patch-apic.png" width="800"></p>
+
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/patch-apic.png.apic-ext.png" width="800"></p>
 
 This `README` documents the new method to install macOS. The older `README` is
 available [here](README-OLD.md).
