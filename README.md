@@ -118,6 +118,7 @@ EFI/CLOVER/config.plist
 virt-manager settings
 <br>
 <br>
+
 ### penryn cpu type required
 
 # VGA required type not vmware, not cirrus, not virtio, not QXL
