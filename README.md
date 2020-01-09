@@ -1,3 +1,15 @@
+
+donate via google pay
+
+bc1q7ap44v0e8tz506fqvdygd7zztluvrl73pd527q
+
+or 
+
+if you found this useful,
+
+https://www.binance.com/userCenter/deposit.html      << for bitcoin mc/visa
+
+
 ### clover-r5070.iso.imac131.svga.iso (intel q35 accel + VMsvga + imac13,1 store login)
 
 https://drive.google.com/file/d/1VeiY7Dt_uk_8KwVNQ-b2riPaUZcih9Tu/view
