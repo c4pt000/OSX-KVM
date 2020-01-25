@@ -23,8 +23,21 @@ cp -rf /opt/OSX-KVM/OVMF* .
 service libvirtd restart
 <br>
 virt-manager
-
+<br>
 all three must be SATA DISK not cdrom or ide even the iso must be SATA DISK not SATA CDROM
+<br>
+(make sure virt-manager NIC type is e1000-82545em for networking)
+<br>
+<p align="center"><img src="https://raw.githubusercontent.com/c4pt000/OSX-KVM/master/Screenshot%20at%202019-12-30%2021-34-57.png" width="800"></p>
+<br>
+make sure cpu type is penryn
+<br>
+erase disk with disk utility then install
+<br>
+<p align="center"><img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Catalina/macos-catalina-recovery-mode-disk-utility-erase-volume.jpg" width="800"></p>
+
+<br>
+
 
 ### clover-r5070.iso.imac131.svga.iso (intel q35 accel + VMsvga + imac13,1 store login)
 
