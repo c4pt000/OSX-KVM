@@ -22,6 +22,9 @@ cp -rf /opt/OSX-KVM/OVMF* .
 <br>
 service libvirtd restart
 <br>
+virt-manager
+
+all three must be SATA DISK not cdrom or ide even the iso must be SATA DISK not SATA CDROM
 
 ### clover-r5070.iso.imac131.svga.iso (intel q35 accel + VMsvga + imac13,1 store login)
 
