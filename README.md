@@ -1,7 +1,8 @@
 
 
 
-
+./fetch-macOS.py
+qemu-img convert BaseSystem.dmg -O raw Catalina-installer.iso
 
 
 ### clover-r5070.iso.imac131.svga.iso (intel q35 accel + VMsvga + imac13,1 store login)
