@@ -7,6 +7,16 @@ qemu-img convert BaseSystem.dmg -O raw Catalina-installer.iso
 <br>
 cp -rf kvm.conf /etc/modprobe.d/
 <br>
+cd /usr/share/
+<br>
+cp -rf OVMF OVMF.orig
+<br>
+cd OVMF
+<br>
+cp -rf /opt/OSX-KVM/OVMF* .
+<br>
+service libvirtd restart
+<br>
 
 ### clover-r5070.iso.imac131.svga.iso (intel q35 accel + VMsvga + imac13,1 store login)
 
