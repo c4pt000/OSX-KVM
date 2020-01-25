@@ -47,7 +47,7 @@ ignore_msrs and unsafe_interrupts required to bypass serial console loading for 
   
   kvm.conf
   ----------------------
-  options kvm ignore_msrs
+  options kvm ignore_msrs=1
 ```
 $ sudo cp kvm.conf /etc/modprobe.d/kvm.conf
   ```
