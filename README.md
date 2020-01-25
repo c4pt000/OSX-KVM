@@ -124,7 +124,7 @@ Fedora 31 noted
 grub.conf
  intel_iommu=on iommu=pt cgroup_enable=memory,namespace systemd.unified_cgroup_hierarchy=0 pcie_acs_override=downstream"
 
-```
+
 * at first run during verbose boot the serial output is scrambled, after about 15 seconds the display auto corrects to the proper wrapped resoloution,
 <br>
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/scrambled.png" width="800"></p>
