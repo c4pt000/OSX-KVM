@@ -1,6 +1,11 @@
 
 
-
+cd /opt
+<br>
+git clone https://github.com/c4pt000/OSX-KVM
+<br>
+cd OSX-KVM
+<br>
 ./fetch-macOS.py
 <br>
 qemu-img convert BaseSystem.dmg -O raw Catalina-installer.iso
