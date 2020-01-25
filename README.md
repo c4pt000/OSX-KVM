@@ -36,14 +36,19 @@ ignore_msrs and unsafe_interrupts required to bypass serial console loading for 
 
   ```
   # echo 1 > /sys/module/kvm/parameters/ignore_msrs
-  ```
+
+
+```
 
   To make this change permanent, you may use the following command.
 
+  
+  kvm.conf
+  ----------------------
+  options kvm ignore_msrs
+```
+$ sudo cp kvm.conf /etc/modprobe.d/kvm.conf
   ```
-  $ sudo cp kvm.conf /etc/modprobe.d/kvm.conf
-  ```
-* editing virsh machine settings with nano opposed to vi standard
 
 
 ```
