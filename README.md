@@ -188,7 +188,10 @@ virt-manager settings
 
 ### boot options enabled "esc at load" OVMF platform settings? resoloution internal
 
-<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/OVMF-CONFIG-RESO.png" width="800"></p>
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/OVMF-CONFIG-RESO.png" width="800"></p> 
+# NOTE FOR SERVER RUNNING LIBVIRTD is REALLY PROBLEMATIC FOR INCOMING TCP/UDP OPEN PORTS ALWAYS RELY ON PHYSICALLY MAPPED
+# ETHERNET WITH PCI PASSTHROUGH FOR INBOUND SERVER SOFTWARE e.g INBOUND port 80 for Apache2 / nginx use physical ethernet
+# mapped like pci to guest or usb to guest ethernet as an example
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/networking-mojave.png" width="800"></p>
 
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/Screenshot%20at%202019-12-30%2021-34-57.png" width="800"></p>
