@@ -1,5 +1,8 @@
 
-
+* update 01-29-2020
+added dmg2iso.pl
+Syntax: dmg2iso.pl filename.dmg filename.iso
+to check if downloaded file is corrupt for manual fetch of dmg image
 cd /opt
 <br>
 git clone https://github.com/c4pt000/OSX-KVM
