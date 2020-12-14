@@ -111,9 +111,10 @@ echo "export EDITOR=nano" >> /home/user/.bashrc
 ### * WIP implement bash script to deploy virsh based virt-manager install package management driven install qemu
 <br>
 <br>
+```
 <p align="center"><img src="https://raw.githubusercontent.com/c4pt000/OSX-KVM/master/fetch-download-catalina-1024x345.png" width="600"></p>
 
-```
+
 qemu-img convert BaseSystem.dmg -O raw Catalina-installer.iso
 ```
 <br>
@@ -128,8 +129,6 @@ qemu-img convert BaseSystem.dmg -O raw Catalina-installer.iso
 
 https://drive.google.com/file/d/1VeiY7Dt_uk_8KwVNQ-b2riPaUZcih9Tu/view
 
-<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/Screenshot%20at%202019-12-30%2021-35-35.png" width="800"></p>
-
 
 
 (iso modified from nick sherlock's iso again from kholia's patch -> resoloution fixed with this iso ^ for kholia's OVMF patch from https://www.nicksherlock.com/2019/10/installing-macos-catalina-10-15-on-proxmox-6/ )
@@ -139,6 +138,9 @@ https://drive.google.com/file/d/1VeiY7Dt_uk_8KwVNQ-b2riPaUZcih9Tu/view
 
 
 ```
+<p align="center"><img src="https://github.com/c4pt000/OSX-KVM/blob/master/Screenshot%20at%202019-12-30%2021-35-35.png" width="800"></p>
+
+
 modprobe nbd max_part=8
 qemu-nbd --connect=/dev/nbd5 clover-r5070.iso.catalina.iso
 mkdir /mnt/catalina-5070
@@ -200,10 +202,6 @@ virt-manager settings
 <p align="center"><img src="https://github.com/c4pt000/OSX-KVM/raw/master/Screenshot%20at%202019-12-30%2021-34-57.png" width="800"></p>
 
 
-
-https://www.binance.com/en/buy-sell-crypto/channel-list/buy/USD/BTC/10
-
-on average its $5.00 USD to transmit bitcoin on most websites dealing with bitcoin
 
 
 
